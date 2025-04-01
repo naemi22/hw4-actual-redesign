@@ -43,7 +43,7 @@
 }
   
   /* RESPONSIVE LAYOUT FOR SMALLER SCREENS */
-  @media (max-width: 9    00px) {
+  @media (max-width: 900px) {
     #middle-content-container {
       grid-template-columns: 1fr; /* Stacks the three sections vertically */
       padding-bottom: 80px;      /* Keep space for bottom navbar */
