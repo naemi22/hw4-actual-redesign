@@ -10,116 +10,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS Studio</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styling/styles.css" /> 
+    <link rel="stylesheet" href="styling/top-navbar.css" /> 
+
+    <link rel="stylesheet" href="styling/exhibitions-events.css" /> 
+    <link rel="stylesheet" href="styling/news-upcoming.css" /> 
+    <link rel="stylesheet" href="styling/event-calendar.css" /> 
+
+    <link rel="stylesheet" href="styling/bottom-navbar.css" /> 
   </head>
 
   <body>
-    <div id="title">
-      <h1>Personas and Storytelling</h1>
-    </div>
+    <div id="whole-webpage-container">
 
-    <div class="circle-container">
-      <!-- Pink Circle for Intro -->
-      <div class="intro-container">
-        <div class="intro-text">
-          <ul>This design exploration will focus on the public interface of library self-checkout stations. 
-          Found in libraries like the Rockefeller at Brown University, these allow patrons to check out books without assistance from a librarian.
-          </ul>
+      <header id="upper-navbar-container">
+        <div class="first-navbar-container">
+          <div class="hamburger-menu">
+            <img class="hamburger-image" alt="Hamburger Menu Icon" src="./assets/Hamburger_Icon.png">
+          </div>
+          <div class="logo-container">
+            <img class="full-text-logo" alt="Logo of AdK" src="./assets/Full_Logo.png"/>
+          </div>
+          <div class="search-icon">
+            <img class="search-image" alt="Search Icon" src="./assets/Search_Icon.png">
+          </div>
+        </div>
+      </header>      
+
+      <div id="middle-content-container">
+
+        <!-- Left Column: Exhibitions & Events -->
+        <div id="exhibitions-events-container">
+          <!-- Main Title -->
+          <h1 class="section-heading">Exhibitions and Events</h1>
+          
+          <!-- Exhibition Subheading (Link) -->
+          <a href="#" class="exhibition-link">
+            Exhibition: EMOP Berlin What Stands Between Us. Photography as a Medium for Chronicling
+          </a>
+
+          <!-- Exhibit Preview (Image) -->
+          <div class="exhibition-image-container">
+            <img
+              class="exhibition-preview-image"
+              alt="Sample Exhibition Image"
+              src="./assets/Exhibition_Photo.png"
+            />
+          </div>
+
+          <!-- Dates + Description -->
+          <div class="exhibition-content">
+            <!-- Dates on the Left -->
+            <div class="exhibition-dates">
+              <div class="start-date">
+                <span class="day-of-week">Fr</span>
+                <span class="date">28.2</span>
+              </div>
+              <div class="end-date">
+                <span class="day-of-week">Mon</span>
+                <span class="date">04.5</span>
+              </div>
+            </div>
+
+            <!-- Description on the Right -->
+            <div class="exhibition-description">
+              <p>
+                In times of crisis, we let ourselves be polarised by images. We want to use 
+                our own view – and images – to counter the increasing division. But what meaning 
+                can photographic images still convey? Isn’t it the camera that stands between us? 
+                This central festival exhibition of EMOP Berlin – European Month of Photography 2025 
+                presents projects by around 20 artists that stand for listening and learning 
+                from Others through their own voices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Horizontal Divider -->
+          <div class="exhibition-divider"></div>
+
+          <!-- Scroll Arrows -->
+          <div class="scroll-arrows">
+            <img src="./assets/Large_Arrow.png" alt="Scroll Arrow Down" class="scroll-arrow">
+            <img src="./assets/Large_Arrow.png" alt="Scroll Arrow Down" class="scroll-arrow">
+            <img src="./assets/Large_Arrow.png" alt="Scroll Arrow Down" class="scroll-arrow">
+          </div>
+
+        </div>
+
+        <!-- Middle Column: News -->
+        <div id="news-container">
+          <h2 class="news-heading">News</h2>
+
+          <!-- Grid of News Items -->
+          <div class="news-items">
+            <!-- News Item 1 -->
+            <div class="news-item">
+              <p class="news-item-title">
+                Berlin Art Prize – Grand Prize 2025 to Gilles Clément
+              </p>
+              <a href="more-info-placeholder" class="news-item-link">more...</a>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="news-item">
+              <p class="news-item-title">
+                Anh-Linh Ngo's speech on No Other Land
+              </p>
+              <a href="more-info-placeholder" class="news-item-link">more...</a>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="news-item">
+              <p class="news-item-title">
+                In opposition to the axing of 3sat under the pretext of “transferring content”
+              </p>
+              <a href="more-info-placeholder" class="news-item-link">more...</a>
+            </div>
+          </div>
+
+          <!-- Footer Link -->
+          <div class="news-footer">
+            <a href="all-events-exhibitions-placeholder" class="news-footer-link">
+              Please click here to view all events and exhibitions.
+            </a>
+          </div>
+
+          <div class="adk-sections">
+            <!-- Left Side: Logo & Title -->
+            <div class="adk-left">
+              <img class="adk-logo" alt="Abbreviation (AdK) Down" src="./assets/Logo_Short.png">
+              <p class="sections-title">Sections</p>
+            </div>
+          
+            <!-- Right Side: Two Columns of Section Links -->
+            <div class="adk-right">
+              <div class="section-column">
+                <a href="visualarts" class="section-link">Visual Arts</a>
+                <a href="architecture" class="section-link">Architecture</a>
+                <a href="music" class="section-link">Music</a>
+              </div>
+              <div class="section-column">
+                <a href="literature" class="section-link">Literature</a>
+                <a href="performingarts" class="section-link">Performing Arts</a>
+                <a href="filmandmediaarts" class="section-link">Film and Media Arts</a>
+              </div>
+            </div>
+          </div>        
+
+        </div>
+
+        <!-- Right Column: Event Calendar -->
+        <div id="event-calendar-container">
+          <h2 class="calendar-heading">Event Calendar</h2>
+          
+          <div class="calender-container">
+            <img class="calendar-placeholder" alt="Calendar with Fake Dates" src="./assets/calendar-mock.png">
+          </div>
+
+          <div class="offerings-item">
+            <p class="offerings-title">
+              Keep up with our latest offerings:
+            </p>
+            <a href="offerings-placeholder" class="section-link">Program March / April 2024</a>
+            <a href="offerings-placeholder" class="section-link">Subscribe to bimonthly program by email</a>
+            <a href="offerings-placeholder" class="section-link">Subscribe to Newsletter</a>
+          </div>
+
+          <img class="social-media-icons" alt="Social Media Icons" src="./assets/Social_Icons.png">
+        </div>
+
+      </div>
+
+
+      <div id="lower-navbar-container">
+        <div class="second-navbar-container">
+          <div class="service-menu">
+            <img class="arrow-image" alt="Small Arrow Icon" src="./assets/Small_Arrow.png">
+            <span class="service-tag">Service</span>
+          </div>
+
+          <div class="press-menu">
+            <img class="arrow-image" alt="Small Arrow Icon" src="./assets/Small_Arrow.png">
+            <span class="press-tag">Press</span>
+          </div>
+
+          <div class="contact-menu">
+            <img class="arrow-image" alt="Small Arrow Icon" src="./assets/Small_Arrow.png">
+            <span class="contact-tag">Contact</span>
+          </div>
+
+          <div class="freundkreis-menu">
+            <img class="arrow-image" alt="Small Arrow Icon" src="./assets/Small_Arrow.png">
+            <span class="freundkreis-tag">Freundkreis</span>
+          </div>
+
+          <div class="newsletter-menu">
+            <img class="arrow-image" alt="Small Arrow Icon" src="./assets/Small_Arrow.png">
+            <span class="newsletter-tag">Newsletter</span>
+          </div>
+
+          <div class="language-menu">
+            <img class="language-image" alt="Language Menu Icon" src="./assets/Language_Toggle.png">
+          </div>
         </div>
       </div>
 
-      <!-- Red Circle for Key Insights -->
-      <div class="info-circle">
-        <div class="info-text">
-          <ul>Through this design research I will:<ul>
-          <ul>
-            <li>Step into user’s shoes and behaviors</li>
-            <li>Observe and interview users’ on their experiences</li>
-            <li>Illustrate user interactions with Personas</li>
-            <li>Narrate users’ end-to-end journey through storyboarding</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  
-    <div id="annotations">
-      <h2>I started this exploration by annotating some of the key features of this public interface</h2>
-      <img id="Interface_Annotation" alt="Annotations of Interface Interations" src="./assets/Interface_Annotated.png"/>
-    </div>
-
-    <div id="interviewquestions">
-      <h2>After each interaction, I interviewed each user on their interaction with the self-check out station. Here are the key take-aways:</h2>
-    
-      <!-- Circle container for Questions 1-8 -->
-      <div class="circle-answers">
-        <!-- First Circle (Questions 1-2) -->
-        <div class="answers-1">
-          <h3>1. Have you used this checkout station before?</h3>
-          <ul>
-            <li>Some users were unaware of the self-checkout option or found it confusing due to prior word-of-mouth experiences.</li>
-            <li>Others had used it occasionally, preferring human interaction over automation.</li>
-          </ul>
-          <h3>2. If so, how often, and what has your previous experience been like?</h3>
-          <ul>
-            <li>Users who had used it before did so only when staff weren’t available.</li>
-            <li>Prior experience sometimes helped them anticipate the process (e.g., from observing librarians), but the interface still caused confusion.</li>
-          </ul>
-          <h3>3. If not, what did you expect the checkout process to involve?</h3>
-          <ul>
-            <li>Assumed it would involve scanning the book but did not expect needing to scan an ID first.</li>
-            <li>Lack of prior awareness of the self-checkout station contributed to initial confusion.</li>
-          </ul>
-        </div>
-    
-        <!-- Second Circle (Questions 3-5) -->
-        <div class="answers-2">
-          <h3>4. Could you walk me through the checkout process?</h3>
-          <ul>
-            <li>Users followed expected steps but encountered issues with barcode placement, ID scanning, and machine responses.</li>
-            <li>The distinction between different components (screen vs. scanner) was unclear to some users.</li>
-          </ul>
-          <h3>5. Would you describe the checkout process as frictionless?</h3>
-          <ul>
-            <li>No—users encountered multiple points of confusion, especially with barcode placement and feedback cues.</li>
-            <li>Some experienced failed attempts before successfully checking out.</li>
-          </ul>
-          <h3>6. If not in which part of the process did you experience that friction on what to do next?</h3>
-          <ul>
-            <li>The green light gave misleading feedback, making users think the checkout was complete when it wasn’t.</li>
-            <li>The number of instructional stickers caused information overload instead of clarity.</li>
-            <li>Uncertainty about whether the screen and scanner were part of the same system.</li>
-          </ul>
-        </div>
-    
-        <!-- Third Circle (Questions 6-8) -->
-        <div class="answers-3">
-          <h3>7. Did the interface have all the available features you expected? Why or why not?</h3>
-          <ul>
-            <li>While it had all the necessary functions, users found it cluttered or counterintuitive.</li>
-            <li>Some instructions were helpful, but others (like excessive labels) contributed to confusion.</li>
-          </ul>
-          <h3>8. Do you think you could have completed the checkout process without the on-screen instructions or labels? Why or why not?</h3>
-          <ul>
-            <li>Some users thought they could have figured it out eventually, especially if they had prior exposure to librarians checking out books.</li>
-            <li>Others might have assumed the checkout was complete due to misleading visual cues.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-    <div id="empathymaps">
-      <h2>Empathy Maps</h2>
-      <h3>
-        The next step in my exploration was creating personas that are not actual people but I synthesized directly from observations of the interviewed users. 
-        One of the key goals through this exercise was to summarize the distinct set of behavioral patterns regarding the use of public interface. 
-      </h3>
-      <img id="User_1_Persona" alt="Persona/Empathy Map of User 1" src="./assets/User_1_Persona.png"/>
-      <img id="User_2_Persona" alt="Persona/Empathy Map of User 2" src="./assets/User_2_Persona.png"/>
-    </div>
-  
-    <div id="storyboarding">
-      <h2>Storyboarding</h2>
-      <h3>The final component of this analysis involved depicting one of the persona's start-to-end user journey. This reflects the goals my persona and all the steps necessary to use the interface.</h3>
     </div>
   </body>
   

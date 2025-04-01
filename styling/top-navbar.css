@@ -1,0 +1,80 @@
+/* Global box-sizing reset */
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#upper-navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures it stays on top of other content */
+  background-color: white; /* Optional background */
+}
+/* Flex container for the navbar now spans full width */
+.first-navbar-container {
+  box-sizing: border-box; /* Include padding and border in the element's width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;   /* Full width */
+  padding: 0 20px;
+  border: 5px solid #000;
+  height: 80px; /* Adjust based on design */
+}
+
+/* Hamburger Menu Container */
+.hamburger-menu {
+  flex: 0 0 auto;
+}
+
+/* Hamburger Image */
+.hamburger-image {
+  max-height: 50px;  /* Constrains the icon's height */
+  width: auto;       /* Maintain aspect ratio */
+}
+
+/* Logo Container */
+.logo-container {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* Full-Text Logo (PNG Image) */
+.full-text-logo {
+  max-height: 60px;  /* Limit the logo height */
+  width: auto;       /* Maintain aspect ratio */
+}
+
+/* Search Icon Container */
+.search-icon {
+  flex: 0 0 auto;
+}
+
+/* Search Image */
+.search-image {
+  max-height: 50px;  /* Constrain the icon's height */
+  width: auto;       /* Maintain aspect ratio */
+  transform: scaleX(-1);  /* Mirrors the image */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 60px;
+    padding: 0 10px;
+  }
+  .hamburger-image, .search-image {
+    max-height: 40px;
+  }
+  .full-text-logo {
+    max-height: 40px;
+  }
+}
+

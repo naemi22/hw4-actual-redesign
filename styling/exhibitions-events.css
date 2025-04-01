@@ -1,0 +1,159 @@
+/* Basic Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Remove any default left margins from these elements */
+.section-heading,
+.exhibition-link,
+.exhibition-image-container,
+.exhibition-content {
+  margin-left: 0;
+}
+
+/* Parent Container */
+#exhibitions-events-container {
+  background-color: #FFF8A1; /* Light yellow from Figma */
+  padding: 20px;
+  box-sizing: border-box;
+  /* You can add a top/bottom border if desired, e.g.:
+     border-top: 5px solid #000;
+     border-bottom: 5px solid #000; */
+}
+
+/* Main Title (e.g., “Exhibitions and Events”) */
+.section-heading {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 30px;  /* Adjust as needed */
+  line-height: 1.2;
+  margin: 0 0 10px;
+  color: #000;
+}
+
+/* Subheading Link (e.g., “Exhibition: EMOP Berlin…”) */
+.exhibition-link {
+  display: inline-block;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 20px; /* Adjust as needed */
+  line-height: 1.2;
+  text-decoration: underline;
+  color: #000;
+}
+
+/* Image Container */
+.exhibition-image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.exhibition-preview-image {
+  max-width: 90%;
+  height: 90%;
+  border: 5px solid #000;
+}
+
+/* Content Section (Dates + Description) */
+.exhibition-content {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  align-items: flex-start; /* This aligns both children at the top */
+}
+
+.exhibition-description p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Dates Column */
+.exhibition-dates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 20px; /* Adjust as needed */
+  color: #000;
+  min-width: 80px; /* Ensures some space for the dates */
+}
+
+/* Individual Date Blocks */
+.start-date, .end-date {
+  margin-bottom: 10px;
+}
+
+/* Smaller text for day-of-week */
+.day-of-week {
+  display: block;
+  font-size: 20px; /* Adjust as needed */
+  margin-bottom: 5px;
+}
+
+.exhibition-description {
+  flex: 1; /* Takes remaining space */
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 13px; /* Adjust as needed */
+  line-height: 1.4;
+  text-align: justify;
+  color: #000;
+}
+
+/* Horizontal Divider (the black line between content and arrows) */
+.exhibition-divider {
+  width: 100%;              /* Fill the parent's width */
+  max-width: 1070px;        /* Optional max width to match your design */
+  margin: 0 auto 20px auto;  /* Center it and add bottom spacing */
+  border-top: 5px solid #000;
+}
+
+/* Scroll Arrows Container */
+.arrows-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Scroll Arrow Images */
+.scroll-arrows {
+  width: 100%;              
+  max-width: 1070px;        
+  margin: 0 auto;         
+  display: flex;
+  justify-content: space-between; /* Evenly distribute the arrows */
+  height: 5vw;  /* Adjust based on desired responsiveness */
+}
+
+/* Responsive Adjustments (below ~768px) */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .exhibition-link {
+    font-size: 24px;
+  }
+
+  .exhibition-content {
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows the items to shrink instead of stacking */
+  }
+
+  .exhibition-dates {
+    font-size: 20px;
+  }
+
+  .exhibition-description {
+    font-size: 16px;
+  }
+
+  .scroll-arrow {
+    height: 6.5vw;  /* Adjust based on desired responsiveness */
+    width: auto;
+  }
+}

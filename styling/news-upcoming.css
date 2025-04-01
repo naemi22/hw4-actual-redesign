@@ -1,0 +1,160 @@
+/* News Container */
+#news-container {
+  background-color: #FFFDFD;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* News Heading */
+.news-heading {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: #000;
+  text-align: left;
+}
+
+/* Grid of News Items */
+.news-items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* Always one column */
+}
+
+/* Individual News Item Card */
+.news-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #D9D9D9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Allow the title to take up available space */
+.news-item-title {
+  flex: 1;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000;
+  margin: 0;  /* Remove bottom margin */
+}
+
+/* The link stays inline and is pushed to the right */
+.news-item-link {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-decoration: underline;
+  color: #000;
+  display: inline-block;
+  margin-left: 20px;  /* Spacing between title and link */
+}
+
+/* Footer Link */
+.news-footer {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.news-footer-link {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding-bottom: 30px;
+  text-decoration: underline;
+  color: #C80178;
+  display: inline-block;
+}
+
+/* ADK Sections */
+/* ADK Sections Container remains the same */
+.adk-sections {
+  background-color: #FFF;
+  border: 5px solid #C80178;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start; /* Left block stays at top */
+  justify-content: space-between;
+}
+
+/* Left Side: Logo & Title */
+.adk-left {
+  text-align: left;
+  margin-right: 20px;
+}
+
+.adk-left .adk-logo {
+  display: block;
+  margin-bottom: 10px;
+  max-width: 100px;
+  height: auto;
+}
+
+.adk-left .sections-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+}
+
+/* Right Side: Two Columns for Section Links */
+.adk-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  flex: 1;            /* Fill remaining space */
+  align-self: center; /* Center vertically within the container */
+}
+
+.section-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Section Links Underlined */
+.section-link {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  text-decoration: underline;  /* Underlines each link */
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .news-heading {
+    font-size: 32px;
+  }
+
+  .news-item-title {
+    font-size: 20px;
+  }
+
+  .news-item-link {
+    font-size: 35px;
+  }
+
+  .news-footer-link {
+    font-size: 25px;
+  }
+
+  .adk-sections .sections-title {
+    font-size: 24px;
+  }
+
+  .adk-sections .section-link {
+    font-size: 16px;
+  }
+}

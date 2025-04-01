@@ -1,0 +1,76 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Lower Navbar Outer Container */
+#lower-navbar-container {
+  position: fixed; /* Fixes the container to the viewport */
+  bottom: 0;       /* Anchors it to the bottom */
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+/* Inner Flex Container for the Navbar */
+.second-navbar-container {
+  box-sizing: border-box; /* Include padding and border in the element's width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;           
+  padding: 0 20px;
+  border: 5px solid #000;
+  height: 80px;             /* Adjust based on design */
+}
+
+/* Menu Items: Each arrow and its text are lined up side by side */
+.service-menu,
+.press-menu,
+.contact-menu,
+.freundkreis-menu,
+.newsletter-menu {
+  display: flex;
+  align-items: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 49px;
+  color: #000;
+}
+
+/* Arrow Image Styling */
+.arrow-image {
+  max-height: 15px;
+  max-width: 50px;
+  width: auto;
+  margin-right: 8px; /* Adjust spacing if needed */
+}
+
+/* Language Menu Styling */
+.language-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the language toggle PNG similar to the search icon in the top nav */
+.language-image {
+  max-height: 40px;
+  max-width: 70px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+    .service-menu,
+    .press-menu,
+    .contact-menu,
+    .freundkreis-menu,
+    .newsletter-menu,
+    .arrow-image {
+      display: none;
+    }
+
+    /* Optionally, you can also adjust font sizes or spacing for smaller screens */
+  }

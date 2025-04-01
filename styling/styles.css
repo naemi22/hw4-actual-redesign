@@ -1,0 +1,56 @@
+::selection {
+  background-color: #C80178; 
+  color: white;
+}
+
+
+/* MIDDLE CONTENT CONTAINER */
+#middle-content-container {
+    display: grid;
+    /* Three columns: left (2fr), middle (1fr), right (1fr) */
+    grid-template-columns: 1.65fr 1.50fr 1.15fr;
+    gap: 0;
+    /* Keep some top margin if needed for the fixed top navbar */
+    margin-top: 80px;
+    /* Remove internal padding to make sections flush */
+    padding: 0;
+    /* Keep bottom padding so content doesn’t get hidden behind the fixed bottom navbar */
+    padding-bottom: 80px; 
+    box-sizing: border-box;
+  }
+  
+  /* EXHIBITIONS & EVENTS CONTAINER */
+  #exhibitions-events-container {
+    background-color: #FFF8A1; /* Same yellow as before */
+    /* Remove border and internal padding */
+    border: none;
+    padding: 50px; /* This applies on all sides */
+  }
+  
+  /* NEWS CONTAINER */
+  #news-container {
+    background-color: #fff; 
+    border: none;
+    padding: 0;
+  }
+  
+  /* EVENT CALENDAR CONTAINER */
+  #event-calendar-container {
+    background-color: #FFF8A1; /* Same yellow as Exhibitions */
+    border: none;
+    padding: 0;
+  }
+  
+  /* OPTIONAL: Adjust headings or other elements inside each container 
+     so text isn’t flush against the edges, if desired. 
+     For example, you might add margin: 20px or padding: 20px 
+     to your headings or content wrappers. */
+  
+  /* RESPONSIVE LAYOUT FOR SMALLER SCREENS */
+  @media (max-width: 768px) {
+    #middle-content-container {
+      grid-template-columns: 1fr; /* Stacks the three sections vertically */
+      padding-bottom: 80px;      /* Keep space for bottom navbar */
+    }
+  }
+  
