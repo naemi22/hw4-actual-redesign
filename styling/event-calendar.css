@@ -3,6 +3,7 @@
   background-color: #FFF8A1; /* Light yellow background */
   padding: 20px;
   box-sizing: border-box;
+  position: relative; /* This makes absolute positioning relative to this container */
 }
 
 /* Calendar Heading */
@@ -23,7 +24,7 @@
 }
 
 .calendar-placeholder {
-  max-width: 80%;
+  width: clamp(300px, 80%, 800px);
   height: auto;
   padding-bottom: 20px;
 }
@@ -55,9 +56,23 @@
   text-align: left;
 }
 
-/* Social Media Icons */
+.section-link::before {
+  content: "•";
+  margin-right: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.social-media-wrapper {
+  position: absolute;
+  bottom: 3rem; 
+  right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .social-media-icons {
-  max-width: 40%;
-  margin: 20px auto 0;
-  justify-content: flex-start;
+  max-width: 45%;
+  height: auto;
 }

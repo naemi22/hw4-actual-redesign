@@ -18,9 +18,6 @@ html, body {
   background-color: #FFF8A1; /* Light yellow from Figma */
   padding: 20px;
   box-sizing: border-box;
-  /* You can add a top/bottom border if desired, e.g.:
-     border-top: 5px solid #000;
-     border-bottom: 5px solid #000; */
 }
 
 /* Main Title (e.g., “Exhibitions and Events”) */
